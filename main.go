@@ -36,7 +36,7 @@ func formHandler(w http.ResponseWriter,r *http.Request){
 
 func helloHandler(w http.ResponseWriter,r *http.Request){
 	if r.URL.Path !="/hello"{
-		http.Error(w,"Wrong URL path",http.StatusNotFound)
+		http.Error(w,"Wrong URL path please try other path",http.StatusNotFound)
 		return
 	}
 	if r.Method !="GET"{
